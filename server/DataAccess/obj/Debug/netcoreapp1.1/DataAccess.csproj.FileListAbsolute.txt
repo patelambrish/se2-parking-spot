@@ -1,0 +1,10 @@
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/bin/Debug/netcoreapp1.1/DataAccess.deps.json
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/bin/Debug/netcoreapp1.1/DataAccess.runtimeconfig.json
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/bin/Debug/netcoreapp1.1/DataAccess.runtimeconfig.dev.json
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/bin/Debug/netcoreapp1.1/DataAccess.dll
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/bin/Debug/netcoreapp1.1/DataAccess.pdb
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/obj/Debug/netcoreapp1.1/DataAccess.csproj.CoreCompileInputs.cache
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/obj/Debug/netcoreapp1.1/DataAccess.AssemblyInfoInputs.cache
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/obj/Debug/netcoreapp1.1/DataAccess.AssemblyInfo.cs
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/obj/Debug/netcoreapp1.1/DataAccess.dll
+/Users/nicktrower/Documents/WebApps/finalspots/server/DataAccess/obj/Debug/netcoreapp1.1/DataAccess.pdb

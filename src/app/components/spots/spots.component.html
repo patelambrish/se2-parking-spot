@@ -1,0 +1,56 @@
+<div class="loginpanel">
+  <form (ngSubmit)="share(f)" #f="ngForm">
+    <div class="txt">
+      <input id="email" name="email" [ngModel]="post.EmailAddress" type="text" placeholder="Email Address" readonly required />
+      <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <div class="txt">
+      <input id="mobile" name="mobile" [(ngModel)]="post.Mobile" type="text" placeholder="Moble Number"  required />
+      <span class="glyphicon glyphicon-phone"></span>
+    </div>
+    <div class="txt">
+      <input id="spot" name="spot" [ngModel]="post.Spot" type="text" placeholder="Spot" readonly required />
+      <span class="glyphicon glyphicon-rub"></span>
+    </div>
+    <label>Start Date:</label>
+    <div class="txt">
+      <select name="sMonth" [(ngModel)]="post.sMonth" required>
+        <option *ngFor="let smonth of months">
+          {{smonth}}
+        </option>
+      </select>
+      <select name="sDay" [(ngModel)]="post.sDay" required>
+        <option *ngFor="let sday of days">
+          {{sday}}
+        </option>
+      </select>
+      <select name="sYear" [(ngModel)]="post.sYear" required>
+        <option *ngFor="let syear of years">
+          {{syear}}
+        </option>
+      </select>
+    </div>
+    <label>End Date:</label>
+    <div class="txt">
+      <select name="eMonth" [(ngModel)]="post.eMonth" required>
+        <option *ngFor="let emonth of months">
+          {{emonth}}
+        </option>
+      </select>
+      <select name="eDay" [(ngModel)]="post.eDay" required>
+        <option *ngFor="let eday of days">
+          {{eday}}
+        </option>
+      </select>
+      <select name="eYear" [(ngModel)]="post.eYear" required>
+        <option *ngFor="let eyear of years">
+          {{eyear}}
+        </option>
+      </select>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Share" [disabled]="!f.valid" />
+    </div>
+  </form>
+</div>
+<app-myspots></app-myspots>

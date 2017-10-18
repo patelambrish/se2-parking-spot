@@ -1,1 +1,320 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  background-color: #a3a3a3;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+
+div.homepanel {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 100px auto;
+  position: relative;
+  background-color: rgba(255, 255, 255,1.0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px 1px #333;
+  -moz-box-shadow: 0 0 5px 1px #333;
+  box-shadow: 0 0 5px 1px #333;
+}
+
+div.homepanel h2 {
+  color: #7acc00;
+  font-size: 18px;
+}
+
+div.loginpanel {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 100px auto;
+  position: relative;
+  background-color: rgba(221, 221, 221, 0.6);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px 1px #333;
+  -moz-box-shadow: 0 0 5px 1px #333;
+  box-shadow: 0 0 5px 1px #333;
+}
+
+div.loginpanel a.register,
+div.gridpanel a.register,
+div.homepanel a.register  {
+  color: #444;
+  text-decoration: none;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s;
+}
+div.loginpanel a.register:before,
+div.gridpanel a.register:before {
+  padding-right: 6px;
+}
+div.loginpanel a.register:hover,
+div.gridpanel a.register:hover  {
+  color: #2ecc71;
+  text-shadow: 0 1px #555;
+}
+div.loginpanel a.register:active,
+div.gridpanel a.register:active  {
+  text-shadow: 0 -1px #555;
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+div.loginpanel input,
+div.gridpanel input {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 12px;
+}
+div.loginpanel label {
+  color: #444;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+div.loginpanel select {
+    margin: 8px 0px;
+    padding: 12px 12px 12px 5px !important;
+    height: 45px;
+    width: 32.33%;
+}
+div.loginpanel div.txt,
+div.gridpanel div.txt {
+  position: relative;
+}
+div.loginpanel div.txt span,
+div.gridpanel div.txt span {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+div.loginpanel div.txt input[type="text"],
+div.loginpanel div.txt input[type="password"],
+div.loginpanel div.txt select {
+  color: #555;
+  text-shadow: 0 1px #FFF;
+  padding: 12px 12px 12px 45px;
+  border: 1px solid #888;
+  border: 2px solid transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+div.loginpanel div.startdate {
+  margin-top: 40px;
+}
+
+div.loginpanel div.txt input[type="text"]:hover,
+div.loginpanel div.txt input[type="password"]:hover,
+div.loginpanel div.txt select:hover,
+div.loginpanel div.txt input[type="text"]:focus,
+div.loginpanel div.txt input[type="password"]:focus,
+div.loginpanel div.txt select:focus {
+  background-color: #FFF;
+}
+div.loginpanel div.txt input[type="text"]:focus,
+div.loginpanel div.txt input[type="password"]:focus,
+div.loginpanel div.txt select:focus,
+ {
+  border-color: rgba(0, 47, 135, 0.4);
+}
+div.loginpanel div.txt label {
+  cursor: text;
+}
+div.loginpanel div.txt label:before {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: 'entypo', sans-serif;
+  font-size: 1.1em;
+  color: #2ecc71;
+  line-height: 58px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+div.loginpanel input[type="submit"]:disabled ,
+div.gridpanel input[type="submit"]:disabled {
+  color: #e8e8e8;
+  background-color: #5C9900;
+}
+div.loginpanel div.buttons,
+div.gridpanel div.buttons  {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+div.loginpanel div.buttons input,
+div.gridpanel div.buttons input  {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+div.loginpanel div.account-nav {
+    text-align: center;
+}
+div.loginpanel div.account-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(102,102,102,0.8);
+    cursor: pointer;
+}
+
+div.loginpanel input[type="submit"],
+div.gridpanel input[type="submit"] {
+  cursor: pointer;
+  color: #FFF;
+ /* text-shadow: 0 1px #27ae60;*/
+  font-size: 1.2em;
+  border: 0 none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #7acc00;
+}
+
+div.loginpanel input[type="button"]:hover,
+div.loginpanel input[type="button"]:focus,
+div.gridpanel input[type="button"]:hover,
+div.gridpanel input[type="button"]:focus {
+  background-color: #7acc00;
+}
+
+div.loginpanel div.hr {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+  color: #555;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+div.loginpanel div.hr div {
+  font-size: 1.2em;
+}
+div.loginpanel div.hr div:first-child,
+div.loginpanel div.hr div:last-child {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+  position: relative;
+}
+div.loginpanel div.hr div:first-child:before,
+div.loginpanel div.hr div:last-child:before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: #5F5F5F;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+div.loginpanel div.hr div:first-child {
+  margin-right: 20px;
+}
+div.loginpanel div.hr div:last-child {
+  margin-left: 20px;
+}
+
+.logo {
+    padding: 10px 10px 0 0;
+}
+
+div.gridpanel {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 100px auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px 1px #333;
+  -moz-box-shadow: 0 0 5px 1px #333;
+  box-shadow: 0 0 5px 1px #333;
+}
+div.gridpanel th, div.gridpanel td {
+  text-align: center;
+}
+div.notification {
+    position: relative;
+    top: 30px;
+    left: 20%;
+    width: 40px;
+    color: #555555;
+}
+
+@media only screen and (max-width: 555px) {
+  div.loginpanel, div.gridpanel,div.homepanel {
+    width: 90%;
+    margin: 65px auto;
+  }
+  div.loginpanel div.buttons,
+  div.gridpanel div.buttons  {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+  }
+  div.loginpanel div.buttons span,
+  div.gridpanel div.buttons span {
+    width: 100%;
+  }
+  div.loginpanel div.buttons span a,
+  div.gridpanel div.buttons span a {
+    width: 100%;
+    line-height: 40px;
+  }
+  .logo {
+    padding: 10px 0 0 10px;
+  }
+
+  div.notification {
+    left: 5%;
+}
+
+}
+@media only screen and (max-width: 400px) {
+  div.loginpanel, div.gridpanel,div.homepanel {
+    width: 90%;
+    margin: 65px auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  .logo {
+    padding: 10px 0 0 10px;
+  }
+  div.notification {
+    left: 5%;
+}
+
+}

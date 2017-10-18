@@ -1,0 +1,26 @@
+<div class="loginpanel">
+  <form (ngSubmit)="login(f)" #f="ngForm">
+    <div class="txt">
+      <input id="email" name="email" ngModel type="text" placeholder="Email Address" required pattern="[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@se2.com|[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@securitybenefit.com"
+      />
+      <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <div class="txt">
+      <input id="mobile" name="mobile" ngModel type="text" placeholder="Moble Number" required pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}"
+      />
+      <span class="glyphicon glyphicon-phone"></span>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Login" [disabled]="!f.valid" />
+    </div>
+    <div class="txt" *ngIf="msg">
+      <div style="text-align: center; color: red;">{{msg}}</div>
+    </div>
+    <div class="hr">
+      <div></div>
+    </div>
+    <div class="account-nav">
+      <a routerLink="/register">Register</a>
+    </div>
+  </form>
+</div>

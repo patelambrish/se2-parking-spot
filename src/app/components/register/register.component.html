@@ -1,0 +1,42 @@
+<div class="loginpanel">
+<div *ngIf="success == true" class="alert alert-success" role="alert">
+  <strong>Well done!</strong> {{msg}}.
+</div>
+<div *ngIf="success == false" class="alert alert-warning" role="alert">
+  <strong>Uh Oh!</strong> {{msg}}.
+</div>
+  <form (ngSubmit)="register(f)" #f="ngForm" *ngIf="!submit">
+    <div class="txt">
+      <input id="email" name="EmailAddress" ngModel type="text" placeholder="Email Address" required pattern="[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@se2.com|[a-z0-9!#$%&'*+\/=?^_`{|}~.-]+@securitybenefit.com"
+      />
+      <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <div class="txt">
+      <input id="mobile" name="MobileNumber" ngModel type="text" placeholder="Moble Number" required pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}"
+      />
+      <span class="glyphicon glyphicon-phone"></span>
+    </div>
+    <div class="txt">
+      <input id="name" name="Name" ngModel type="text" placeholder="Name" required />
+      <span class="glyphicon glyphicon-pencil"></span>
+    </div>
+    <div class="txt">
+      <input id="spot" name="Spot" ngModel type="text" placeholder="Parking Spot" />
+      <span class="glyphicon glyphicon-rub"></span>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Register" [disabled]="!f.valid" />
+    </div>
+    <div class="hr">
+      <div></div>
+    </div>
+    <div class="account-nav">
+      <a routerLink="/login">Login</a>
+    </div>
+  </form>
+  <div *ngIf="loginlink">
+    <div class="hr">
+
+    </div>
+  </div>
+</div>

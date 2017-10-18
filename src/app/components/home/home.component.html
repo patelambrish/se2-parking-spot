@@ -1,0 +1,31 @@
+<div class="homepanel">
+  <table class="table table-striped" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="50">
+    <thead>
+    <tr>
+        <th style="width: 22%">
+            <mfDefaultSorter by="spot">Spot</mfDefaultSorter>
+        </th>
+        <th style="width: 23%">
+            <mfDefaultSorter by="date">Date Available</mfDefaultSorter>
+        </th>
+        <th style="width: 25%">
+            <mfDefaultSorter by="id">Reserve</mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+        <td>{{item.spot}}</td>
+        <td>{{item.date}}</td>
+        <td><a class="register" (click)="reserve(item.id)"><i class="glyphicon glyphicon-send"></i></a></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+</div>
